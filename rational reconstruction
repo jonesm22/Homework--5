@@ -1,0 +1,29 @@
+# This is the code I used to help me answer the rational reconstruction problem:
+
+#a = 389
+#m = 5077
+#m = 2345678910
+#a = 123456789
+#a = 8171666302
+#m = 10000000000
+a = 17
+m = 10000
+b = sqrt(m/2)
+u = m
+v = a
+U = [1,0,u]
+V = [0,1,v]
+T = [0,0,0]
+while V[2] > b:
+    q = int(math.floor(U[2]/V[2]))
+    T[0] = U[0]-q*V[0]
+    T[1] = U[1]- q*V[1]
+    T[2] = U[2]- q*V[2]
+    U = V
+    V= T
+    d = (V[1])
+    n = V[2]
+print "d is: "
+print d  
+print "n is: " 
+print n
