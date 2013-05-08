@@ -1,0 +1,24 @@
+# This is the code that I used to crack your RSA. I took the square root of n
+# then tried primes greater than sqrt(n) and if n divided by the new prime 
+# was also a prime then it printed the two numbers.
+# these two numbers are the p and q such that p*q = n
+
+p = int(sqrt(n))
+x = 100
+for i in range(x):
+    p = int(next_prime(p))
+    q = int(n/p)
+    if is_prime(a):
+        if p*a == n:
+            print q
+            print p
+
+q = 68222080226222296181917368518534332259513625527062166102114730123514248558349
+
+is_prine(q)
+
+p = 68222080226222296181917368518534332259513625527062166102114730123514248558499
+
+is_prime(p)
+
+p*q == n
