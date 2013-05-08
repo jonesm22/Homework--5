@@ -3,6 +3,8 @@
 # was also a prime then it printed the two numbers.
 # these two numbers are the p and q such that p*q = n
 
+# Part A of this problem is located in the README of homework 5
+
 p = int(sqrt(n))
 x = 100
 for i in range(x):
